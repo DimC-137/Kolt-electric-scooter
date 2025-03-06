@@ -1,0 +1,267 @@
+.kolt-container {
+
+    width: 500px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(26, 26, 31);
+    top: -10px;
+    z-index: 600;
+    box-shadow: 0px 10px 10px black;
+    padding-top: 10px;
+
+    .kolt-info {
+
+        border-radius: 0 15px 15px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: space-around;
+        position: relative;
+        color: rgb(143, 143, 143);
+        padding: 15px 0 15px 0;
+
+        div {
+
+            margin-left: 15px;
+            display: flex;
+            width: 100%;
+
+            .title-name {
+
+                color: rgb(255, 174, 0);
+                margin: 0 0 0 10px;
+                width: 80px;
+
+            }
+
+            .title-editables {
+
+                text-align: right;
+                margin: 0 0 0 30px;
+                width: 50%;
+                display: flex;
+                align-items: center;
+
+                .free {
+
+                    background-color: green;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    display: flex;
+                    margin: 0;
+                    box-shadow: 0px 2px 8px black;
+                }
+
+                .busy {
+
+                    background-color: rgb(189, 0, 0);
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    display: flex;
+                    margin: 0;
+                    box-shadow: 0px 2px 8px black;
+                }
+
+            }
+
+            .reg {
+
+                color: rgb(255, 255, 255);
+
+            }
+        }
+
+        .kolt-add {
+
+            border: 3px solid black;
+            height: 30px;
+            width: 100px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            right: -2px;
+            bottom: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(66, 66, 66);
+            user-select: none;
+            border-radius: 15px 0 0 0;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: rgb(255, 174, 0);
+                color: black;
+                cursor: pointer;
+            }
+
+        }
+
+        .kolt-delete {
+
+            border: 3px solid black;
+            border-top: 3px solid rgb(26, 26, 31);
+            height: 30px;
+            width: 100px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            right: -2px;
+            bottom: -2px;
+            border-radius: 0 0 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(66, 66, 66);
+            user-select: none;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: rgb(155, 0, 0);
+                color: black;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+}
+
+.stats {
+
+    width: 490px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(26, 26, 31);
+    top: -50px;
+    z-index: 100;
+    box-shadow: 0px 10px 10px black;
+
+    .stats-title {
+
+        color: rgb(255, 255, 255);
+        width: auto;
+
+    }
+
+    .sort-mile {
+
+        background: black;
+        color: rgb(66, 66, 66);
+        cursor: pointer;
+        height: 100%;
+        position: relative;
+        left: -8px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 0 0 0 15px;
+        border: 3px solid black;
+        transition: 0.2s;
+        user-select: none;
+
+        &:hover {
+
+            background-color: rgb(155, 0, 0);
+            color: rgb(255, 255, 255);
+
+        }
+
+    }
+
+    .sort-date {
+
+        background: black;
+        color: rgb(66, 66, 66);
+        cursor: pointer;
+        height: 100%;
+        position: relative;
+        right: -8px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 0 0 15px 0;
+        border: 3px solid black;
+        transition: 0.2s;
+        user-select: none;
+
+        &:hover {
+
+            background-color: rgb(155, 0, 0);
+            color: rgb(255, 255, 255);
+
+        }
+    }
+
+    .sort-id {
+
+        background: black;
+        color: rgb(66, 66, 66);
+        cursor: pointer;
+        height: 100%;
+        position: relative;
+        left: -8px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 0 0 0 15px;
+        border: 3px solid black;
+        transition: 0.2s;
+        user-select: none;
+
+        &:hover {
+
+            background-color: rgb(255, 174, 0);
+            color: black;
+
+        }
+    }
+
+    .sort-id2 {
+
+        background: black;
+        color: rgb(66, 66, 66);
+        cursor: pointer;
+        height: 100%;
+        position: relative;
+        right: -8px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 0 0 15px 0;
+        border: 3px solid black;
+        transition: 0.2s;
+        user-select: none;
+
+        &:hover {
+
+            background-color: rgb(255, 174, 0);
+            color: black;
+
+        }
+    }
+
+}
